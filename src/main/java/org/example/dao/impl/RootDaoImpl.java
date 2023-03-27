@@ -1,43 +1,32 @@
 package org.example.dao.impl;
 
-import org.example.dao.EquationDao;
+import org.example.dao.RootDao;
 import org.example.exception.DataProcessingException;
-import org.example.model.Equation;
 import org.example.model.Root;
 import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class EquationDaoImpl implements EquationDao {
+public class RootDaoImpl implements RootDao {
     @Override
-    public Equation add(Equation equation) {
+    public Root add(Root root) {
         Session session = null;
         Transaction transaction = null;
         try {
             session = HibernateUtil.getSessionFactory().openSession();
             transaction = session.beginTransaction();
-            session.save(equation);
+            session.save(root);
             transaction.commit();
-            return equation;
+            return root;
         } catch (Exception e) {
             if (transaction != null) {
                 transaction.rollback();
             }
-            throw new DataProcessingException("Can't insert equation: " + equation, e);
+            throw new DataProcessingException("Can't insert root: " + root, e);
         } finally {
             if (session != null) {
                 session.close();
             }
         }
-    }
-
-    @Override
-    public Equation getEquationsByRoot(String rootValue) {
-        return null;
-    }
-
-    @Override
-    public Equation getEquationsByNumberOfRoot(int number) {
-        return null;
     }
 }

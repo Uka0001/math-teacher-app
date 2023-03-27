@@ -4,7 +4,9 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -23,7 +25,9 @@ public class Equation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
+    @Column(name = "equation_value")
     String equationValue;
+    //    @OneToMany(mappedBy = "rootValue", fetch = FetchType.LAZY)
     @OneToMany
     List<Root> rootList;
 }
