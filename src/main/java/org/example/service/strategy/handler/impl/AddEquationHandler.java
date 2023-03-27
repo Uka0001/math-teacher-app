@@ -6,6 +6,8 @@ import org.example.dao.impl.EquationDaoImpl;
 import org.example.dao.impl.RootDaoImpl;
 import org.example.model.Equation;
 import org.example.model.Root;
+import org.example.service.ValidationOfEquation;
+import org.example.service.impl.ValidationOfEquationImpl;
 import org.example.service.strategy.handler.CommandHandler;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.Scanner;
 
 public class AddEquationHandler implements CommandHandler {
   EquationDao equationDao = new EquationDaoImpl();
+  ValidationOfEquation validation = new ValidationOfEquationImpl();
   RootDao rootDao = new RootDaoImpl();
   Scanner scanner = new Scanner(System.in);
   @Override
@@ -22,11 +25,11 @@ public class AddEquationHandler implements CommandHandler {
       Equation equation = new Equation();
       equation.setEquationValue(scanner.next());
       String equationValue = equation.getEquationValue();
-      if (!equation.checkBrackets(equationValue)) {
+      if (!validation.checkBrackets(equationValue)) {
         System.out.println("You have unbalanced brackets in your equation: " + equationValue);
         break;
       }
-      if (!equation.checkSyntax(equationValue)) {
+      if (!validation.checkSyntax(equationValue)) {
         System.out.println("You have bad syntax in your equation: " + equationValue);
         break;
       }
