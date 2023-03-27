@@ -21,7 +21,7 @@ import javax.persistence.Table;
 public class Root {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @Column(name = "root_value")
-    Long rootValue;
+    private Long rootValue;
 }

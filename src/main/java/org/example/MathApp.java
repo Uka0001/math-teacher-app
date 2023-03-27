@@ -15,8 +15,8 @@ public class MathApp {
     public void run() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("Enter command: ");
-            String command = scanner.nextLine();
+            System.out.println(System.lineSeparator() + "Enter command: ");
+            String command = scanner.next();
             CommandHandler commandHandler = commandStrategy.get(command);
             commandHandler.handle();
         }

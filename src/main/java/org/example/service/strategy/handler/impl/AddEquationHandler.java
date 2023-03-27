@@ -7,7 +7,6 @@ import org.example.dao.impl.RootDaoImpl;
 import org.example.model.Equation;
 import org.example.model.Root;
 import org.example.service.strategy.handler.CommandHandler;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -21,21 +20,31 @@ public class AddEquationHandler implements CommandHandler {
     while (true) {
       System.out.println("Enter equation to save: ");
       Equation equation = new Equation();
-      equation.setEquationValue(scanner.nextLine());
+      equation.setEquationValue(scanner.next());
+      String equationValue = equation.getEquationValue();
+      if (!equation.checkBrackets(equationValue)) {
+        System.out.println("You have unbalanced brackets in your equation: " + equationValue);
+        break;
+      }
+      if (!equation.checkSyntax(equationValue)) {
+        System.out.println("You have bad syntax in your equation: " + equationValue);
+        break;
+      }
       List<Root> rootList = new ArrayList<>();
       addRootToEquation(equation, rootList);
       equation.setRootList(rootList);
       equationDao.add(equation);
-      System.out.printf("Your equation: %s was added to db", equation.getEquationValue());
+      System.out.printf("Your equation: %s was added to db",
+              equationValue);
       break;
     }
   }
 
   private void addRootToEquation(Equation equation, List<Root> rootList) {
     System.out.println("Do you want to save root to previous entered equation: (answer \"y\" or \"n\")");
-    if (scanner.next().toLowerCase().equals("y")) {
+    if (scanner.next().equalsIgnoreCase("y")) {
       System.out.println("Enter your root you want to add to db: ");
-      Long rootValue = scanner.nextLong();
+      Long rootValue = Long.valueOf(scanner.next());
       Root root = new Root();
       root.setRootValue(rootValue);
       rootDao.add(root);

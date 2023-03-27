@@ -3,7 +3,6 @@ package org.example.dao.impl;
 import org.example.dao.EquationDao;
 import org.example.exception.DataProcessingException;
 import org.example.model.Equation;
-import org.example.model.Root;
 import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

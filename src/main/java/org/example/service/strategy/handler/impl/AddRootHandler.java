@@ -13,9 +13,9 @@ public class AddRootHandler implements CommandHandler {
   public void handle() {
     System.out.println("Do you want to add root to your equation?(answer \"y\" or \"n\")");
     Root root = new Root();
-    if (scanner.next().toLowerCase().equals("y")) {
+    if (scanner.next().equalsIgnoreCase("y")) {
       System.out.println("Enter your root you want to add to db: )");
-      root.setRootValue(scanner.nextLong());
+      root.setRootValue(Long.valueOf(scanner.next()));
       rootDao.add(root);
     } else {
       System.out.println("Your root was not added, you can try another command");

@@ -8,7 +8,6 @@ import org.example.service.strategy.handler.impl.AddEquationHandler;
 import org.example.service.strategy.handler.impl.ExitCommandHandler;
 import org.example.service.strategy.handler.impl.GetByRootName;
 import org.example.service.strategy.handler.impl.GetByRootNumber;
-
 import java.util.Map;
 
 public class CommandStrategyImpl implements CommandStrategy {
