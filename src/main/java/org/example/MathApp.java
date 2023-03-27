@@ -3,6 +3,7 @@ package org.example;
 import org.example.service.strategy.CommandStrategy;
 import org.example.service.strategy.handler.CommandHandler;
 
+import javax.script.ScriptException;
 import java.util.Scanner;
 
 public class MathApp {
@@ -12,7 +13,7 @@ public class MathApp {
         this.commandStrategy = commandStrategy;
     }
 
-    public void run() {
+    public void run() throws ScriptException {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println(System.lineSeparator() + "Enter command: ");

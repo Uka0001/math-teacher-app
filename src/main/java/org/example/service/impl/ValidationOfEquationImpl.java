@@ -2,6 +2,10 @@ package org.example.service.impl;
 
 import org.example.service.ValidationOfEquation;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
 public class ValidationOfEquationImpl implements ValidationOfEquation {
     @Override
     public boolean checkBrackets(String expression) {
@@ -40,6 +44,19 @@ public class ValidationOfEquationImpl implements ValidationOfEquation {
             }
         }
         return true;
+    }
+
+    @Override
+    public boolean checkRoot(String expression, Long rootValue) throws ScriptException {
+        boolean result = false;
+        if (expression.contains("x")) {
+            String expressionWithRoot = expression.replaceAll("x", String.valueOf(rootValue));
+            String[] expressions = expressionWithRoot.split("=");
+            ScriptEngineManager mgr = new ScriptEngineManager();
+            ScriptEngine engine = mgr.getEngineByName("graal.js");
+            result = engine.eval(expressions[0]).equals(engine.eval(expressions[1]));
+        }
+        return result;
     }
 
     public static boolean contains(char[] array, char item) {

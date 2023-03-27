@@ -12,6 +12,7 @@ and command handlers patterns.
 - Hibernate,
 - MySQL,
 - Checkstyle,
+- Graalvm js script engine,
 - Logging, //TODO
 - JUnit5,
 
