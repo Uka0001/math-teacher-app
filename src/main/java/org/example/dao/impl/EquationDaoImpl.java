@@ -34,42 +34,6 @@ public class EquationDaoImpl implements EquationDao {
     }
 
     @Override
-    public List<String> getEquationsByRoot(Long rootValue) {
-        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-        try (Session session = sessionFactory.openSession()) {
-            Query<String> query = session.createQuery(
-                    "SELECT e.equationValue"
-                            + " FROM Equation e "
-                            + "JOIN Root r ON e.id = r.equationId "
-                            + "WHERE r.rootValue = :rootValue"
-                    , String.class);
-            query.setParameter("rootValue", rootValue);
-            return query.getResultList();
-        } catch (Exception e) {
-            throw new DataProcessingException("Couldn't find available equation by root value: "
-                    + rootValue, e);
-        }
-    }
-
-    @Override
-    public List<String> getEquationsByNumberOfRoot(int number) {
-        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-        try (Session session = sessionFactory.openSession()) {
-            Query<String> query = session.createQuery(
-                    "SELECT e.equationValue"
-                            + " FROM Equation e "
-                            + "JOIN Root r ON e.id = r.equationId "
-                            + "WHERE size(e.rootList) = :number"
-                    , String.class);
-            query.setParameter("number", number);
-            return query.getResultList();
-        } catch (Exception e) {
-            throw new DataProcessingException("Couldn't find available equation by roots number: "
-                    + number, e);
-        }
-    }
-
-    @Override
     public Equation update(Equation equation) {
         Session session = null;
         Transaction transaction = null;
@@ -88,6 +52,40 @@ public class EquationDaoImpl implements EquationDao {
             if (session != null) {
                 session.close();
             }
+        }
+    }
+
+    @Override
+    public List<String> getEquationsByRoot(Long rootValue) {
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
+            Query<String> query = session.createQuery(
+                    "SELECT e.equationValue"
+                            + " FROM Equation e "
+                            + "JOIN Root r ON e.id = r.equationId "
+                            + "WHERE r.rootValue = :rootValue", String.class);
+            query.setParameter("rootValue", rootValue);
+            return query.getResultList();
+        } catch (Exception e) {
+            throw new DataProcessingException("Couldn't find available equation by root value: "
+                    + rootValue, e);
+        }
+    }
+
+    @Override
+    public List<String> getEquationsByNumberOfRoot(int number) {
+        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+        try (Session session = sessionFactory.openSession()) {
+            Query<String> query = session.createQuery(
+                    "SELECT e.equationValue"
+                            + " FROM Equation e "
+                            + "JOIN Root r ON e.id = r.equationId "
+                            + "WHERE size(e.rootList) = :number", String.class);
+            query.setParameter("number", number);
+            return query.getResultList();
+        } catch (Exception e) {
+            throw new DataProcessingException("Couldn't find available equation by roots number: "
+                    + number, e);
         }
     }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/util/HibernateUtil.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/EquationDaoImpl.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/RootDaoImpl.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/EquationDao.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/RootDao.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/Main.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Root.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Command.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Equation.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/MathApp.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/impl/ValidationOfEquationImpl.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/ValidationOfEquation.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/AddEquationHandler.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/HelpCommandHandler.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/GetByRootNumber.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/GetByRootName.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/ExitCommandHandler.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/CommandHandler.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategyImpl.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategy.java">
+</file>
+<file name="/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/exception/DataProcessingException.java">
+</file>
+</checkstyle>

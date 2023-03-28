@@ -1,10 +1,9 @@
 package org.example;
 
+import java.util.Scanner;
+import javax.script.ScriptException;
 import org.example.service.strategy.CommandStrategy;
 import org.example.service.strategy.handler.CommandHandler;
-
-import javax.script.ScriptException;
-import java.util.Scanner;
 
 public class MathApp {
     private final CommandStrategy commandStrategy;

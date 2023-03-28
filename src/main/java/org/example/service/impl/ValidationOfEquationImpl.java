@@ -1,10 +1,9 @@
 package org.example.service.impl;
 
-import org.example.service.ValidationOfEquation;
-
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
+import org.example.service.ValidationOfEquation;
 
 public class ValidationOfEquationImpl implements ValidationOfEquation {
     @Override
@@ -39,7 +38,8 @@ public class ValidationOfEquationImpl implements ValidationOfEquation {
             return false;
         }
         for (int i = 1; i < chars.length; i++) {
-            if (contains(operatorsExceptMinus, chars[i]) && contains(operatorsExceptMinus, chars[i-1])) {
+            if (contains(operatorsExceptMinus, chars[i])
+                    && contains(operatorsExceptMinus, chars[i - 1])) {
                 return false;
             }
         }

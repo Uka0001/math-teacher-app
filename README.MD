@@ -36,4 +36,15 @@ one after another except of - after math operator),
 
 ## Project SetUp:
 1. Clone this repo.
-2. ...
+2. Install Java17, IntelliJ IDEA, MySQL if you don`t have some.
+3. Open cloned repo in IntelliJ IDEA.
+4. Init your MySQL DB from init_db.sql file in resources folder.
+5. Input your login and password and other credentials in hibernate.cfg.xml
+file in resources folder.
+6. Start app from Main.java file in org/example/ root.
+7. Enter command "help" to see the list of commands to start your work with app.
+8. When you finished your work enter "exit" command to exit from app.
+
+I would like to hear your feedback for this app, so don`t hesitate to contact me via
+my contacts on the main page of my gitHub profile.
+Good luck. With :hearts: love from :ukraine: Ukraine! :smiley:

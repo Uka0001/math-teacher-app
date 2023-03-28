@@ -1,9 +1,6 @@
 package org.example.model;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,9 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @Setter
@@ -33,9 +30,9 @@ public class Equation {
 
     @Override
     public String toString() {
-        return "Equation{" +
-                "equationValue='" + equationValue + '\'' +
-                ", rootList=" + rootList +
-                '}';
+        return "Equation{"
+                + "equationValue='"
+                + equationValue
+                + '}';
     }
 }

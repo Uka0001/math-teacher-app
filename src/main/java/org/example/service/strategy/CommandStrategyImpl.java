@@ -1,13 +1,13 @@
 package org.example.service.strategy;
 
+import java.util.Map;
 import org.example.model.Command;
 import org.example.service.strategy.handler.CommandHandler;
-import org.example.service.strategy.handler.impl.HelpCommandHandler;
 import org.example.service.strategy.handler.impl.AddEquationHandler;
 import org.example.service.strategy.handler.impl.ExitCommandHandler;
 import org.example.service.strategy.handler.impl.GetByRootName;
 import org.example.service.strategy.handler.impl.GetByRootNumber;
-import java.util.Map;
+import org.example.service.strategy.handler.impl.HelpCommandHandler;
 
 public class CommandStrategyImpl implements CommandStrategy {
     private final Map<Command, CommandHandler> strategyMap;
