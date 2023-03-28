@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -27,6 +28,14 @@ public class Equation {
     @Column(name = "equation_value")
     private String equationValue;
     //    @OneToMany(mappedBy = "rootValue", fetch = FetchType.LAZY)
-    @OneToMany
+    @OneToMany(mappedBy = "equation", fetch = FetchType.LAZY)
     private List<Root> rootList;
+
+    @Override
+    public String toString() {
+        return "Equation{" +
+                "equationValue='" + equationValue + '\'' +
+                ", rootList=" + rootList +
+                '}';
+    }
 }

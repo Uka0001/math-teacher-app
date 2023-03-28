@@ -1,7 +1,5 @@
 package org.example;
 
-import org.example.dao.impl.EquationDaoImpl;
-import org.example.model.Equation;
 import org.example.service.strategy.CommandStrategyImpl;
 
 import javax.script.ScriptException;

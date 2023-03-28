@@ -2,7 +2,6 @@ package org.example.service.strategy;
 
 import org.example.model.Command;
 import org.example.service.strategy.handler.CommandHandler;
-import org.example.service.strategy.handler.impl.AddRootHandler;
 import org.example.service.strategy.handler.impl.HelpCommandHandler;
 import org.example.service.strategy.handler.impl.AddEquationHandler;
 import org.example.service.strategy.handler.impl.ExitCommandHandler;
@@ -16,7 +15,6 @@ public class CommandStrategyImpl implements CommandStrategy {
     public CommandStrategyImpl() {
         strategyMap = Map.of(
                 Command.ADD_EQUATION, new AddEquationHandler(),
-                Command.ADD_ROOT, new AddRootHandler(),
                 Command.GET_BY_ROOT_NAME, new GetByRootName(),
                 Command.GET_BY_ROOT_NUMBER, new GetByRootNumber(),
                 Command.HELP, new HelpCommandHandler(),

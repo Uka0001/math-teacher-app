@@ -35,10 +35,11 @@ public class AddEquationHandler implements CommandHandler {
         System.out.println("You have bad syntax in your equation: " + equationValue);
         break;
       }
+      equationDao.add(equation);
       List<Root> rootList = new ArrayList<>();
       addRootToEquation(equation, rootList);
       equation.setRootList(rootList);
-      equationDao.add(equation);
+      equationDao.update(equation);
       System.out.printf("Your equation: %s was added to db",
               equationValue);
       break;
@@ -51,10 +52,12 @@ public class AddEquationHandler implements CommandHandler {
       System.out.println("Enter your root you want to add to db: ");
       Long rootValue = Long.valueOf(scanner.next());
       Root root = new Root();
+      root.setEquationId(equation.getId());
+      root.setEquation(equation);
       root.setRootValue(rootValue);
       if (validation.checkRoot(equation.getEquationValue(),rootValue)) {
-        rootDao.add(root);
         rootList.add(root);
+        rootDao.add(root);
         System.out.printf("Your root: %s was added to equation: %s ", root.getRootValue(), equation.getEquationValue());
         System.out.println(System.lineSeparator());
         addRootToEquation(equation, rootList);

@@ -14,7 +14,7 @@ and command handlers patterns.
 - Checkstyle,
 - Graalvm js script engine,
 - Logging, //TODO
-- JUnit5,
+- JUnit5, //TODO
 
 ## Used patterns:
 - Strategy, 

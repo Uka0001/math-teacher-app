@@ -2,10 +2,14 @@ package org.example.dao;
 
 import org.example.model.Equation;
 
+import java.util.List;
+
 public interface EquationDao {
     Equation add(Equation equation);
 
-    Equation getEquationsByRoot(String rootValue);
+    List<String> getEquationsByRoot(Long rootValue);
 
-    Equation getEquationsByNumberOfRoot(int number);
+    List<String> getEquationsByNumberOfRoot(int number);
+
+    Equation update(Equation equation);
 }
