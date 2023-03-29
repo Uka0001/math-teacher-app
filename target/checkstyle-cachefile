@@ -1,10 +1,10 @@
-#Tue Mar 28 22:32:07 EEST 2023
+#Wed Mar 29 23:56:36 EEST 2023
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/Main.java=1680031118324
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/MathApp.java=1680031387047
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/EquationDao.java=1680031118358
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/MathApp.java=1680095757017
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/EquationDao.java=1680095757018
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/RootDao.java=1679916886325
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/EquationDaoImpl.java=1680031118348
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/RootDaoImpl.java=1679916886309
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/EquationDaoImpl.java=1680095757019
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/RootDaoImpl.java=1680095757020
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/exception/DataProcessingException.java=1679692169869
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Command.java=1680022233811
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Equation.java=1680031387031
@@ -14,7 +14,7 @@
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategy.java=1680031502061
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategyImpl.java=1680031914010
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/CommandHandler.java=1680031502069
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/AddEquationHandler.java=1680031913973
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/AddEquationHandler.java=1680095757021
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/ExitCommandHandler.java=1680031914001
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/GetByRootName.java=1680031913993
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/GetByRootNumber.java=1680031913984

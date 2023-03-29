@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.service.impl.ValidationOfEquationImplTest" time="2.489" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/oleksii/Documents/GitHub/math-teacher-app/target/test-classes:/Users/oleksii/Documents/GitHub/math-teacher-app/target/classes:/Users/oleksii/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/oleksii/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/oleksii/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/oleksii/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/oleksii/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/oleksii/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/oleksii/.m2/repository/org/hibernate/hibernate-core/5.4.24.Final/hibernate-core-5.4.24.Final.jar:/Users/oleksii/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/oleksii/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/oleksii/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/Users/oleksii/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/Users/oleksii/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/oleksii/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/oleksii/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/Users/oleksii/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/oleksii/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/oleksii/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/oleksii/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/oleksii/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/oleksii/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/oleksii/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/oleksii/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/oleksii/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/oleksii/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/oleksii/.m2/repository/org/hibernate/hibernate-entitymanager/5.4.21.Final/hibernate-entitymanager-5.4.21.Final.jar:/Users/oleksii/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/oleksii/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/oleksii/.m2/repository/org/hsqldb/hsqldb/2.7.1/hsqldb-2.7.1.jar:/Users/oleksii/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/oleksii/.m2/repository/org/graalvm/js/js/22.0.0/js-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/regex/regex/22.0.0/regex-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0/truffle-api-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0/graal-sdk-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0/js-scriptengine-22.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/oleksii/Documents/GitHub/math-teacher-app/target/surefire/surefirebooter-20230329235638380_3.jar /Users/oleksii/Documents/GitHub/math-teacher-app/target/surefire 2023-03-29T23-56-37_789-jvmRun1 surefire-20230329235638380_1tmp surefire_0-20230329235638380_2tmp"/>
+    <property name="http.nonProxyHosts" value="127.0.0.1:6258|*.127.0.0.1:6258|127.0.0.1:6263|*.127.0.0.1:6263|127.0.0.1:10191|*.127.0.0.1:10191|127.0.0.1:14821|*.127.0.0.1:14821|127.0.0.1:24861|*.127.0.0.1:24861|127.0.0.1:25007|*.127.0.0.1:25007|127.0.0.1:38151|*.127.0.0.1:38151|127.0.0.1:46360|*.127.0.0.1:46360|127.0.0.1:49801|*.127.0.0.1:49801|127.0.0.1:55730|*.127.0.0.1:55730|127.0.0.1:59483|*.127.0.0.1:59483"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/oleksii/Documents/GitHub/math-teacher-app/target/test-classes:/Users/oleksii/Documents/GitHub/math-teacher-app/target/classes:/Users/oleksii/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/oleksii/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/oleksii/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/oleksii/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/oleksii/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/oleksii/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/oleksii/.m2/repository/org/hibernate/hibernate-core/5.4.24.Final/hibernate-core-5.4.24.Final.jar:/Users/oleksii/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/oleksii/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/oleksii/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/Users/oleksii/.m2/repository/net/bytebuddy/byte-buddy/1.10.17/byte-buddy-1.10.17.jar:/Users/oleksii/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/oleksii/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/oleksii/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/Users/oleksii/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/oleksii/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/oleksii/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/oleksii/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/Users/oleksii/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/oleksii/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/oleksii/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/oleksii/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/oleksii/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/oleksii/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/oleksii/.m2/repository/org/hibernate/hibernate-entitymanager/5.4.21.Final/hibernate-entitymanager-5.4.21.Final.jar:/Users/oleksii/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/oleksii/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/oleksii/.m2/repository/org/hsqldb/hsqldb/2.7.1/hsqldb-2.7.1.jar:/Users/oleksii/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/oleksii/.m2/repository/org/graalvm/js/js/22.0.0/js-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/regex/regex/22.0.0/regex-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0/truffle-api-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0/graal-sdk-22.0.0.jar:/Users/oleksii/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0/js-scriptengine-22.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/oleksii"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/oleksii/Documents/GitHub/math-teacher-app"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/oleksii/Documents/GitHub/math-teacher-app/target/surefire/surefirebooter-20230329235638380_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="127.0.0.1:6258|*.127.0.0.1:6258|127.0.0.1:6263|*.127.0.0.1:6263|127.0.0.1:10191|*.127.0.0.1:10191|127.0.0.1:14821|*.127.0.0.1:14821|127.0.0.1:24861|*.127.0.0.1:24861|127.0.0.1:25007|*.127.0.0.1:25007|127.0.0.1:38151|*.127.0.0.1:38151|127.0.0.1:46360|*.127.0.0.1:46360|127.0.0.1:49801|*.127.0.0.1:49801|127.0.0.1:55730|*.127.0.0.1:55730|127.0.0.1:59483|*.127.0.0.1:59483"/>
+    <property name="java.runtime.version" value="19.0.2"/>
+    <property name="user.name" value="oleksii"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/oleksii/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/16/xxmkn_nj3v72wqwpldy0z1v80000gn/T/"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="/Users/oleksii/Documents/GitHub/math-teacher-app"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/oleksii/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="19.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="127.0.0.1:6258|*.127.0.0.1:6258|127.0.0.1:6263|*.127.0.0.1:6263|127.0.0.1:10191|*.127.0.0.1:10191|127.0.0.1:14821|*.127.0.0.1:14821|127.0.0.1:24861|*.127.0.0.1:24861|127.0.0.1:25007|*.127.0.0.1:25007|127.0.0.1:38151|*.127.0.0.1:38151|127.0.0.1:46360|*.127.0.0.1:46360|127.0.0.1:49801|*.127.0.0.1:49801|127.0.0.1:55730|*.127.0.0.1:55730|127.0.0.1:59483|*.127.0.0.1:59483"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="checkBrackets_ok" classname="org.example.service.impl.ValidationOfEquationImplTest" time="0.054"/>
+  <testcase name="checkSyntax_ok" classname="org.example.service.impl.ValidationOfEquationImplTest" time="0.003"/>
+  <testcase name="checkRoot_notOk" classname="org.example.service.impl.ValidationOfEquationImplTest" time="2.199">
+    <system-err><![CDATA[[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+]]></system-err>
+  </testcase>
+  <testcase name="checkBrackets_notOk" classname="org.example.service.impl.ValidationOfEquationImplTest" time="0.005"/>
+  <testcase name="checkSyntax_notOk" classname="org.example.service.impl.ValidationOfEquationImplTest" time="0.002"/>
+  <testcase name="checkRoot_ok" classname="org.example.service.impl.ValidationOfEquationImplTest" time="0.18">
+    <system-err><![CDATA[[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[To redirect Truffle log output to a file use one of the following options:
+* '--log.file=<path>' if the option is passed using a guest language launcher.
+* '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+* Configure logging using the polyglot embedding API.]
+[engine] WARNING: The polyglot context is using an implementation that does not support runtime compilation.
+The guest application code will therefore be executed in interpreted mode only.
+Execution only in interpreted mode will strongly impact the guest application performance.
+For more information on using GraalVM see https://www.graalvm.org/java/quickstart/.
+To disable this warning the '--engine.WarnInterpreterOnly=false' option or use the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+]]></system-err>
+  </testcase>
+</testsuite>
