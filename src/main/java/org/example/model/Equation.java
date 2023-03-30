@@ -10,12 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
 @Entity
 @Table(name = "equations")
 public class Equation {
@@ -24,7 +22,6 @@ public class Equation {
     private Long id;
     @Column(name = "equation_value")
     private String equationValue;
-    //    @OneToMany(mappedBy = "rootValue", fetch = FetchType.LAZY)
     @OneToMany(mappedBy = "equation", fetch = FetchType.LAZY)
     private List<Root> rootList;
 

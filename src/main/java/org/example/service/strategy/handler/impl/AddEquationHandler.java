@@ -10,13 +10,13 @@ import org.example.dao.impl.EquationDaoImpl;
 import org.example.dao.impl.RootDaoImpl;
 import org.example.model.Equation;
 import org.example.model.Root;
-import org.example.service.ValidationOfEquation;
-import org.example.service.impl.ValidationOfEquationImpl;
+import org.example.service.EquationValidator;
+import org.example.service.impl.EquationValidatorImpl;
 import org.example.service.strategy.handler.CommandHandler;
 
 public class AddEquationHandler implements CommandHandler {
     private EquationDao equationDao = new EquationDaoImpl();
-    private ValidationOfEquation validation = new ValidationOfEquationImpl();
+    private EquationValidator validation = new EquationValidatorImpl();
     private RootDao rootDao = new RootDaoImpl();
     private Scanner scanner = new Scanner(System.in);
 
@@ -58,7 +58,7 @@ public class AddEquationHandler implements CommandHandler {
             root.setEquationId(equation.getId());
             root.setEquation(equation);
             root.setRootValue(rootValue);
-            validateRoot(equation, rootList, rootValue, root);
+            validateRoot(equation, rootList, root);
         } else {
             System.out.println("Continue app services");
         }
@@ -66,9 +66,8 @@ public class AddEquationHandler implements CommandHandler {
 
     private void validateRoot(Equation equation,
                               List<Root> rootList,
-                              Long rootValue,
                               Root root) throws ScriptException {
-        if (validation.checkRoot(equation.getEquationValue(), rootValue)) {
+        if (validation.checkRoot(equation.getEquationValue(), root.getRootValue())) {
             rootList.add(root);
             rootDao.add(root);
             System.out.printf("Your root: %s was added to equation: %s ",

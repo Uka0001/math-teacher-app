@@ -13,6 +13,9 @@ and command handlers patterns.
 - MySQL,
 - Checkstyle,
 - Graalvm js script engine,
+- Mockito,
+- Lombok,
+- Maven-jar-plugin
 
 ## :flashlight: Used patterns:
 - Strategy, 
@@ -39,9 +42,17 @@ one after another except of - after math operator),
 4. Init your MySQL DB from init_db.sql file in resources folder.
 5. Input your login and password and other credentials in hibernate.cfg.xml
 file in resources folder.
+First variant to start app:
 6. Start app from Main.java file in org/example/ root.
+(Optional) Second variant to start app:
+6. Run in your IntelliJ IDEA terminal command:
+"java -jar math-teacher-app-1.0-SNAPSHOT.jar" to start your work with app.
 7. Enter command "help" to see the list of commands to start your work with app.
 8. When you finished your work enter "exit" command to exit from app.
+
+## :film_projector: Video presentation of working app
+You can check app functionality in my video:
+https://www.loom.com/share/e44a011db6534f3988902b4d86734a07
 
 :envelope: I would like to hear your feedback for this app, so don`t hesitate to contact me via
 my contacts on the main page of my gitHub profile.

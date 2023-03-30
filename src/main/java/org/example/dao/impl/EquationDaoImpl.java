@@ -47,7 +47,7 @@ public class EquationDaoImpl implements EquationDao {
             if (transaction != null) {
                 transaction.rollback();
             }
-            throw new DataProcessingException("Can't insert equation: " + equation, e);
+            throw new DataProcessingException("Can't update equation: " + equation, e);
         } finally {
             if (session != null) {
                 session.close();
@@ -56,7 +56,7 @@ public class EquationDaoImpl implements EquationDao {
     }
 
     @Override
-    public List<String> getEquationsByRoot(Long rootValue) {
+    public List<String> getEquationsByRoot(Long root) {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             Query<String> query = session.createQuery(
@@ -64,16 +64,16 @@ public class EquationDaoImpl implements EquationDao {
                             + " FROM Equation e "
                             + "JOIN Root r ON e.id = r.equationId "
                             + "WHERE r.rootValue = :rootValue", String.class);
-            query.setParameter("rootValue", rootValue);
+            query.setParameter("rootValue", root);
             return query.getResultList();
         } catch (Exception e) {
             throw new DataProcessingException("Couldn't find available equation by root value: "
-                    + rootValue, e);
+                    + root, e);
         }
     }
 
     @Override
-    public List<String> getEquationsByNumberOfRoot(int number) {
+    public List<String> getEquationsByRootNumber(int rootNumber) {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             Query<String> query = session.createQuery(
@@ -81,11 +81,11 @@ public class EquationDaoImpl implements EquationDao {
                             + " FROM Equation e "
                             + "JOIN Root r ON e.id = r.equationId "
                             + "WHERE size(e.rootList) = :number", String.class);
-            query.setParameter("number", number);
+            query.setParameter("number", rootNumber);
             return query.getResultList();
         } catch (Exception e) {
             throw new DataProcessingException("Couldn't find available equation by roots number: "
-                    + number, e);
+                    + rootNumber, e);
         }
     }
 }

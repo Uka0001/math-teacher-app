@@ -6,9 +6,9 @@ import org.example.model.Equation;
 public interface EquationDao {
     Equation add(Equation equation);
 
-    List<String> getEquationsByRoot(Long rootValue);
+    List<String> getEquationsByRoot(Long root);
 
-    List<String> getEquationsByNumberOfRoot(int number);
+    List<String> getEquationsByRootNumber(int rootNumber);
 
     Equation update(Equation equation);
 }
