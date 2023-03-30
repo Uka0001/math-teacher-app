@@ -24,12 +24,10 @@ public class Root {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name = "equation_id")
     private Long equationId;
     @Column(name = "root_value")
     private Long rootValue;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "equation_id", insertable = false, updatable = false)
     private Equation equation;

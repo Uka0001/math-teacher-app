@@ -3,11 +3,10 @@
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/AddEquationHandler.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/util/HibernateUtil.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/MathApp.java
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/ValidationOfEquation.java
-/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/impl/ValidationOfEquationImpl.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/impl/RootDaoImpl.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategyImpl.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/RootDao.java
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/EquationValidator.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/dao/EquationDao.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Root.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/exception/DataProcessingException.java
@@ -18,4 +17,5 @@
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/model/Command.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/CommandHandler.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/handler/impl/GetByRootName.java
+/Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/impl/EquationValidatorImpl.java
 /Users/oleksii/Documents/GitHub/math-teacher-app/src/main/java/org/example/service/strategy/CommandStrategy.java

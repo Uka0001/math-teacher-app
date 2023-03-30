@@ -12,11 +12,11 @@ import javax.script.ScriptException;
 class ValidationOfEquationImplTest {
     private List<String> validStringsList;
     private List<String> notValidStringsList;
-    ValidationOfEquationImpl validation;
+    private EquationValidatorImpl validation;
 
     @BeforeEach
     void setUp() {
-        validation = new ValidationOfEquationImpl();
+        validation = new EquationValidatorImpl();
         validStringsList = List.of(
                 "(2*x)+5=17",
                 "-1.3*(5/x)=1.2",
@@ -33,7 +33,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkBrackets_ok() {
+    void checkBrackets_validEquation_ok() {
         for (String string : validStringsList) {
             assertTrue(validation.checkBrackets(string),
                     "Brackets should be validated and return"
@@ -43,7 +43,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkBrackets_notOk() {
+    void checkBrackets_inValidEquation_notOk() {
         for (String string : notValidStringsList) {
             assertFalse(validation.checkBrackets(string),
                     "Brackets should be not validated and return "
@@ -53,7 +53,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkSyntax_ok() {
+    void checkSyntax_validEquation_ok() {
         for (String string : validStringsList) {
             assertTrue(validation.checkSyntax(string),
                     "Syntax should be validated and return "
@@ -62,7 +62,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkSyntax_notOk() {
+    void checkSyntax_invalidEquation_notOk() {
         for (String string : notValidStringsList) {
             assertFalse(validation.checkSyntax(string),
                     "Syntax should be not validated and return "
@@ -71,7 +71,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkRoot_ok() throws ScriptException {
+    void checkRoot_validEquation_ok() throws ScriptException {
         assertTrue(validation.checkRoot("(2*x)+5=17", 6L),
                 "Root should be right for equation");
         assertTrue(validation.checkRoot("-1*(5+x)=-12", 7L),
@@ -85,7 +85,7 @@ class ValidationOfEquationImplTest {
     }
 
     @Test
-    void checkRoot_notOk() throws ScriptException {
+    void checkRoot_invalidEquation_notOk() throws ScriptException {
         assertFalse(validation.checkRoot("(2*x)+5=17", 7L),
                 "Root should be right for equation");
         assertFalse(validation.checkRoot("-1*(5+x)=-12", 6L),

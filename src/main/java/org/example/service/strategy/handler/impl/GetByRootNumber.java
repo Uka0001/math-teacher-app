@@ -14,7 +14,7 @@ public class GetByRootNumber implements CommandHandler {
     public void handle() {
         System.out.println("Enter number of roots to find an equation in database: ");
         int number = scanner.nextInt();
-        List<String> equationsByNumberOfRoot = equationDao.getEquationsByNumberOfRoot(number);
+        List<String> equationsByNumberOfRoot = equationDao.getEquationsByRootNumber(number);
         System.out.println("Your equations are:");
         equationsByNumberOfRoot.forEach(System.out::println);
     }
